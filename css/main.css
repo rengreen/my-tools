@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: #37474F;
+    font-size: 1.6rem;
+}
+
+.home-top-container a {
+    color: #454343; 
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border: 1px solid #454343;
+    padding: 3px;
+}
+
+.nav-top-container .nav-menu {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-top-container .nav-menu li {
+    border-bottom: 1px solid #F5F7F8;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav-top-container .nav-menu li a {
+    color: #454343; 
+    text-decoration: none;
+    font-size: 1.4rem;
+}
