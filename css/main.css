@@ -9,35 +9,66 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Raleway', sans-serif;
-    color: #37474F;
+    font-family: 'Raleway', sans-serif;   
+    color: #454343; 
     font-size: 1.6rem;
 }
 
-.home-top-container a {
+/* --------------------------------------------*/
+.top-bar {
+    height:70px;
+    display:block;
+}
+
+.home-link-container {
+    width: 125px;
+    margin-left: 10px;
+}
+
+.home-link-container a {
+    font-family: 'Ribeye Marrow', cursive;
     color: #454343; 
+    
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 600;
-    border: 1px solid #454343;
-    padding: 3px;
+    line-height: 70px;
 }
 
-.nav-top-container .nav-menu {
-    list-style: none;
-    width: 100%;
-    text-align: center;
+.top-bar .hamburger {
+    border: 0;
+    background: 0;
+
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 2rem;
 }
 
-.nav-top-container .nav-menu li {
-    border-bottom: 1px solid #F5F7F8;
-    padding-top: 15px;
-    padding-bottom: 15px;
+/* --------------------------------------------*/
+.top-banner {
+    height:150px;
+    display:block;
+    background: #efefef;
 }
 
-.nav-top-container .nav-menu li a {
+.top-banner .banner-text {
+    font-family: 'Ribeye Marrow', cursive;
     color: #454343; 
-    text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 6rem;
+    text-align: center;
+    line-height: 15rem;
+}
+
+main {
+    height:300px;
+    display:block;
+    margin: 10px;
+
+}
+
+main .small-tiles,
+main .tiles {
+    min-height: 50px;
+    
 }
