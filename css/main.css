@@ -9,29 +9,30 @@ html {
 }
 
 body {
-    font-family: 'Raleway', sans-serif;   
-    color: #454343; 
+    font-family: 'Raleway', sans-serif;
+    color: #454343;
     font-size: 1.6rem;
+    min-width: 300px;
 }
 
 /* --------------------------------------------*/
 .top-bar {
     position: fixed;
-    height:70px;
-    width:100%;
+    height: 70px;
+    width: 100%;
 
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
 
     background: #FFFFFF;
     box-shadow: -1px 3px 3px -3px rgba(0, 0, 0, 0.5);
-    z-index:100;
+    z-index: 100;
 }
 
-.top-bar-content {  
+.top-bar-content {
     position: relative;
     max-width: 1000px;
-    margin:auto;
+    margin: auto;
 }
 
 .home-link-container {
@@ -41,8 +42,8 @@ body {
 
 .home-link-container a {
     font-family: 'Ribeye Marrow', cursive;
-    color: #454343; 
-    
+    color: #454343;
+
     text-decoration: none;
     font-size: 2rem;
     font-weight: 600;
@@ -52,8 +53,8 @@ body {
 .nav-container {
     position: absolute;
     width: 100%;
-    top:0;
-    margin:auto;
+    top: 0;
+    margin: auto;
 }
 
 .hamburger {
@@ -72,39 +73,40 @@ body {
 .top-banner {
     position: absolute;
     top: 70px;
-    height:150px;
+    height: 150px;
     width: 100%;
 
-    display:block;
+    display: block;
     background: url(../img/lines.png);
 }
 
-.top-banner-content {  
+.top-banner-content {
     position: relative;
-    max-width: 1000px;
-    margin:auto;
+    max-width: 1020px;
+    margin: auto;
 }
 
 .top-banner .banner-text {
     font-family: 'Ribeye Marrow', cursive;
-    color: #454343; 
+    color: #454343;
     font-size: 6rem;
     text-align: center;
     line-height: 14rem;
 }
 
+/* --------------------------------------------*/
 main {
     position: absolute;
     top: 220px;
-    height:1200px;
+    height: 1200px;
     width: 100%;
-    display:block;
+    display: block;
 }
 
 .main-content {
     position: relative;
-    max-width: 1000px;
-    margin:auto;
+    max-width: 1040px;
+    margin: auto;
 
 }
 
@@ -115,6 +117,58 @@ h3 {
 main .small-tiles,
 main .tiles {
     min-height: 50px;
-    
+
 }
 
+.grid {
+    overflow: auto;
+    text-align: left;
+    padding: 10px;
+}
+
+.grid .tile {
+    width: 12.5%;
+    display: inline-block;
+    margin: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+
+@media screen and (max-width: 880px) {
+    .grid .tile {
+        width: 16.666%;
+    }
+}
+
+
+@media screen and (max-width: 760px) {
+    .grid .tile {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .grid .tile {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .grid .tile {
+        width: 33.333%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .grid .tile {
+        width: 50%;
+    }
+
+    body {
+        font-size: 5vw;
+    }
+
+    .top-banner .banner-text {
+        font-size: 12vw;
+    }
+}
