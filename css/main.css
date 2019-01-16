@@ -16,13 +16,27 @@ body {
 
 /* --------------------------------------------*/
 .top-bar {
+    position: fixed;
     height:70px;
-    display:block;
+    width:100%;
+
+    top:0;
+    left:0;
+
+    background: #FFFFFF;
+    box-shadow: -1px 3px 3px -3px rgba(0, 0, 0, 0.5);
+    z-index:100;
+}
+
+.top-bar-content {  
+    position: relative;
+    max-width: 1000px;
+    margin:auto;
 }
 
 .home-link-container {
     width: 125px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .home-link-container a {
@@ -35,9 +49,16 @@ body {
     line-height: 70px;
 }
 
-.top-bar .hamburger {
+.nav-container {
+    position: absolute;
+    width: 100%;
+    top:0;
+    margin:auto;
+}
+
+.hamburger {
     border: 0;
-    background: 0;
+    background: transparent;
 
     position: absolute;
     right: 20px;
@@ -45,11 +66,23 @@ body {
     font-size: 2rem;
 }
 
+
+
 /* --------------------------------------------*/
 .top-banner {
+    position: absolute;
+    top: 70px;
     height:150px;
+    width: 100%;
+
     display:block;
-    background: #efefef;
+    background: url(../img/lines.png);
+}
+
+.top-banner-content {  
+    position: relative;
+    max-width: 1000px;
+    margin:auto;
 }
 
 .top-banner .banner-text {
@@ -57,14 +90,26 @@ body {
     color: #454343; 
     font-size: 6rem;
     text-align: center;
-    line-height: 15rem;
+    line-height: 14rem;
 }
 
 main {
-    height:300px;
+    position: absolute;
+    top: 220px;
+    height:1200px;
+    width: 100%;
     display:block;
-    margin: 10px;
+}
 
+.main-content {
+    position: relative;
+    max-width: 1000px;
+    margin:auto;
+
+}
+
+h3 {
+    margin-left: 20px;
 }
 
 main .small-tiles,
@@ -72,3 +117,4 @@ main .tiles {
     min-height: 50px;
     
 }
+
