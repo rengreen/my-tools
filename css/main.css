@@ -127,6 +127,10 @@ main .tiles {
     margin: 1%;
 }
 
+/*
+box-shadow according to serglo/material-design-shadows.css
+link: gist.github.com/serglo/f9f0be9a66fd6755a0bda85f9c64e85f
+*/
 
 /*8 tiles*/
 .grid .tile {
