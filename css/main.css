@@ -144,27 +144,27 @@ main .tiles {
   }
 
 /*6 tiles*/
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 980px) {
     .grid .tile {
         width: 14%;
     }
 }
 
 /*4 tiles*/
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 736px) {
     .grid .tile {
         width: 22%;
     }
 }
 
 /*2 tiles*/
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 480px) {
     .grid .tile {
         width: 46%;
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 240px) {
     .grid .tile {
         width: 94%;
     }
