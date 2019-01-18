@@ -120,6 +120,13 @@ main .tiles {
 
 }
 
+/* --------------------------------------------*/
+footer {
+    min-height: 70px;
+    margin-bottom: 0;
+    background: url(../img/one-wave.png);
+}
+
 .grid {
     overflow: auto;
     text-align: center;
