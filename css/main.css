@@ -6,6 +6,7 @@
 
 html {
     font-size: 62.7%;
+    background: #FFFFFF;
 }
 
 body {
@@ -75,7 +76,7 @@ body {
     width: 100%;
 
     display: block;
-    background: url(../img/lines.png);
+    background: url(../img/waves.png);
 }
 
 .top-banner-content {
@@ -89,7 +90,7 @@ body {
     color: #454343;
     font-size: 5rem;
     text-align: center;
-    line-height: 7rem;
+    line-height: 9rem;
 }
 
 /* --------------------------------------------*/
