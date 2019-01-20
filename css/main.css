@@ -38,7 +38,7 @@ body {
 
 .home-link-container {
     width: 120px;
-    margin-left: 7%;
+    margin-left: 30px;
 }
 
 .home-link-container a {
@@ -63,7 +63,7 @@ body {
     background: transparent;
 
     position: absolute;
-    right: 8%;
+    right: 30px;
     font-size: 2rem;
     line-height: 60px;
 }
@@ -104,76 +104,71 @@ main {
     position: relative;
     max-width: 1200px;
     margin: auto;
-
 }
 
 h2 {
-    margin-left: 8%;
-    line-height: 1.6rem;
+    margin-left: 30px;
+    line-height: 3rem;
 }
 
-main .small-tiles,
-main .tiles {
-    min-height: 250px;
-    margin-left: 6%;
-    margin-right: 6%;
+.tiles {
+    display: grid;    
+    grid-gap: 20px;
 
+    max-width: 1200px;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+    text-align: left;
 }
 
-/* --------------------------------------------*/
-footer {
-    min-height: 70px;
-    margin-bottom: 0;
-    background: url(../img/one-wave.png);
+.tiles .tile {
+    width: 100%;
 }
-
-.grid {
-    overflow: auto;
-    text-align: center;
-    margin: 1%;
-}
-
-/*
-box-shadow according to serglo/material-design-shadows.css
-link: gist.github.com/serglo/f9f0be9a66fd6755a0bda85f9c64e85f
-*/
 
 /*8 tiles*/
-.grid .tile {
-    width: 10%;
-    display: inline-block;
-    margin: 1%;
-
-    border-radius: 0.1;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);
-    transition: all 0.3s cubic-bezier(.4,0,.2,1);
+.small-tiles {
+    grid-template-columns: repeat(8, 1fr);
 }
 
-.grid .tile:hover {
-    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.20);
-  }
+.big-tiles {
+    grid-template-columns: repeat(4, 1fr);
+}
 
 /*6 tiles*/
 @media screen and (max-width: 980px) {
-    .grid .tile {
-        width: 14%;
+    .small-tiles {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    
+    .big-tiles {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 /*4 tiles*/
 @media screen and (max-width: 736px) {
-    .grid .tile {
-        width: 22%;
+    .small-tiles {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .big-tiles {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 /*2 tiles*/
 @media screen and (max-width: 480px) {
-    .grid .tile {
-        width: 46%;
+    .small-tiles {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .big-tiles {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
+/*very small device*/
 @media screen and (max-width: 240px) {
     .grid .tile {
         width: 94%;
@@ -188,4 +183,23 @@ link: gist.github.com/serglo/f9f0be9a66fd6755a0bda85f9c64e85f
     }
 }
 
-  
+/*
+box-shadow according to serglo/material-design-shadows.css
+link: gist.github.com/serglo/f9f0be9a66fd6755a0bda85f9c64e85f
+*/
+
+.tile {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);
+    transition: all 0.3s cubic-bezier(.4,0,.2,1);
+}
+
+.tile:hover {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.20);
+  }
+
+/* --------------------------------------------*/
+footer {
+    min-height: 70px;
+    margin-bottom: 0;
+    background: url(../img/one-wave.png);
+}
