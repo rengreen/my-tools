@@ -68,7 +68,6 @@ body {
     line-height: 60px;
 }
 
-
 .nav-menu {
     position: absolute;
     top: 60px;
@@ -92,6 +91,27 @@ body {
     text-decoration: none;
     font-size: 2rem;
 }
+
+.hamburger {
+    border: 0;
+    background: 0;
+
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+}
+
+.hamburger .hamburger-icon {
+    display: none;
+}
+
+/*
+.hamburger .close-icon {
+    display: none;
+}
+*/
 
 /* --------------------------------------------*/
 .top-banner {
@@ -242,5 +262,6 @@ footer {
     font-size: 2rem;
     text-align: center;
     position: relative;
-    top: 40px;
+    top: 45px;
 }
+
