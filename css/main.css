@@ -68,6 +68,31 @@ body {
     line-height: 60px;
 }
 
+
+.nav-menu {
+    position: absolute;
+    top: 60px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    background: #c9cee0;
+
+}
+
+.nav-menu li {
+    border-bottom: 1px solid #F5F7F8;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav-menu li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
 /* --------------------------------------------*/
 .top-banner {
     position: absolute;
