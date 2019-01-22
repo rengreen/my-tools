@@ -115,6 +115,12 @@ body {
     border-bottom: 1px solid #454343;
 }
 
+@media (min-width: 40em) {
+    .hamburger {
+    display:none;
+    }
+}
+
 
 /* --------------------------------------------*/
 .top-banner {
