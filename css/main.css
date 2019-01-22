@@ -55,23 +55,26 @@ body {
     position: absolute;
     width: 100%;
     top: 0;
-    margin: auto;
 }
 
 .nav-menu {
-    position: absolute;
-    top: 60px;
     list-style: none;
     margin: 0;
     padding: 0;
+    display:none;   
+}
+
+.page-header.nav-opened .nav-menu {
+    top: 60px;
+    position: absolute;
+    display: block;
     width: 100%;
     text-align: center;
     background: #c9cee0;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    display:none;   
 }
 
-.nav-menu li {
+.page-header.nav-opened .nav-menu li {
     border-bottom: 1px solid #454343;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -97,10 +100,6 @@ body {
     display: none;
 }
 
-.page-header.nav-opened .nav-menu {
-    display: block;
-}
-
 .page-header.nav-opened .hamburger-icon {
     display: none;
 }
@@ -117,7 +116,26 @@ body {
 
 @media (min-width: 40em) {
     .hamburger {
-    display:none;
+        display:none;
+    }
+
+    .nav-menu {
+        position: absolute;
+        right:10px;
+        display: flex;
+        text-align: right;
+        line-height: 60px;
+    }
+
+    .nav-menu li {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav-menu li a {
+        color: #454343;
+        text-decoration: none;
+        font-size: 2rem;
     }
 }
 
